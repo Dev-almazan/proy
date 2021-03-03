@@ -1,31 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="es-mx">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Collapsible sidebar using Bootstrap 4</title>
-
-    <!-- Bootstrap CSS CDN -->
-<!-- Font Awesome -->
+    <title>HND MB - México</title>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-<!-- Google Fonts -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-<!-- Bootstrap core CSS -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-<!-- Material Design Bootstrap -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-    <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="style.css">
-<!-- JQuery -->
+<!-- Our Custom CSS -->
+<link rel="stylesheet" href="style.css">
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<!-- Bootstrap tooltips -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
    
     
@@ -37,63 +26,56 @@
         <nav id="sidebar">
             <div class="sidebar-header">
               <center>
-               <img src="uno.jfif" width="90px" >
+               <img src="img/logo.png" width="220px" class="img principal" >
                </center>
             </div>
 
             <ul class="list-unstyled components">
-                <li class="active text-center">INICIO</li><BR>
+               
                 <li class="active">
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Productos</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                            <a href="#">CREMAS</a>
+                            <a href="#">Bienestar</a>
                         </li>
                         <li>
-                            <a href="#">PERFUMES</a>
+                            <a href="#">Cuidado Personal</a>
                         </li>
                         <li>
-                            <a href="#">BLOQUEADORES</a>
+                            <a href="#">Fragancias</a>
                         </li>
                     </ul>
                 </li>
               
-                <li>
+                <li class="active">
                     <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Nuestros Clientes</a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
                         <li>
-                            <a href="#">COMENTARIOS</a>
+                            <a href="#">Opiniones</a>
                         </li>
-                        <li>
-                            <a href="#">Page 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Page 3</a>
-                        </li>
+                      
                     </ul>
                 </li>
-                 <li>
-                    <a href="#cc" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Contactanos </a>
+                 <li class="active">
+                    <a href="#cc" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Genera Ingresos </a>
                     <ul class="collapse list-unstyled" id="cc">
                         <li>
-                            <a href="#">AFILIATE</a>
+                            <a href="#">Afiliate</a>
                         </li>
                         <li>
-                            <a href="#">Page 2</a>
+                            <a href="#">Contactanos</a>
                         </li>
-                        <li>
-                            <a href="#">Page 3</a>
-                        </li>
+                      
                     </ul>
                 </li>
              
            
 
-            <div class="list-unstyled text-center pt-3">
+            <div class="list-unstyled text-center secun">
                         
-                <i class="fab fa-facebook fx-2 "></i>
-                <i class="fab fa-whatsapp"></i>
-                   <i class="fab fa-instagram"></i>    
+                <i class="fab fa-facebook fa-3x p-2"></i>
+                <i class="fab fa-whatsapp fa-3x p-2"></i>
+                   <i class="fab fa-instagram fa-3x p-2"></i>    
               
                         </div>
         </nav>
@@ -133,11 +115,77 @@
 
 
 
-  <div class="container marketing ">
+  <div class="container-fluid marketing">
       
        <!-- BANNER PRINCIPAL-->
-<div class="principal">
-  <img src="banne.jfif" width="1200px" class="img p-5">
+<div class="banner">
+ <!--Carousel Wrapper-->
+                <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+                  <!--Indicators-->
+                  <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-2" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-2" data-slide-to="2"></li>
+                  </ol>
+                  <!--/Indicators-->
+                  <!--Slides-->
+                  <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                      <div class="view" >
+                        <img class="img bp" src="img/bann.jpeg"
+                          alt="First slide" width="1100px">
+                        <a href="#!">
+                          <div class="mask "></div>
+                        </a>
+                      </div>
+                      <div class="carousel-caption">
+                      
+                      <button type="button"  class="btn btn-dark text-white" >Ver producto</button>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <!--Mask color-->
+                      <div class="view" >
+                        <img class="img bp" src="img/bann.jpeg" width="1100px"
+                          alt="Second slide">
+                        <a href="#!">
+                          <div class="mask "></div>
+                        </a>
+                      </div>
+                      <div class="carousel-caption">
+                        
+                               <button type="button"  class="btn btn-dark text-white" >Ver producto</button>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <!--Mask color-->
+                      <div class="view">
+                        <img class="img bp" src="img/bann.jpeg" width="1100px"
+                          alt="Third slide">
+                        <a href="#!">
+                          <div class="mask "></div>
+                        </a>
+                      </div>
+                      <div class="carousel-caption">
+                      
+                          <button type="button"  class="btn btn-dark text-white" >Ver producto</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!--/Slides-->
+                  <!--Controls-->
+                  <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                  <!--/Controls-->
+                </div>
+                <!--/Carousel Wrapper-->
+
       </div>
       
     <!-- CONOCE NUESTROS PRODUCTOS-->   
